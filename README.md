@@ -5,3 +5,5 @@
   - closure
   - recursive functions
   
+## Classes in Javascript
+  - introduction
