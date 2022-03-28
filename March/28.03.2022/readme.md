@@ -2,12 +2,12 @@
   
  - **Classes**
    - Constructor Function
+   - Set and Get 
    - Creating subclass  
    
 
 - pdf [classes](classes.pdf)
 ---
-
 
 
 
