@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+   //   let res = "";
+function reverseString(str) {
+  if (str === "") {
+    // This is the terminal case that will end the recursion
+    return "";
+  } else {
+    /**
+      d
+      dl
+      dlr
+      dlro
+      dlrow
+      dlrow 
+      dlrow o
+      dlrow ol
+      dlrow oll
+      dlrow olle
+      dlrow olleh
+     */
+    return reverseString(str.substr(1)) + str.charAt(0);
+    //                                      
+   // console.log(res);
+   // return res;
+  }
+}
+
+console.log( reverseString("hello world"));
+
+// 2nd way
+
+function reserve_1(str) {
+  if (str.length <= 1) {
+    return str;
+  } else {
+    return str.charAt(str.length - 1) + reserve_1(str.slice(0, str.length - 1));
+  }
+}
+//console.log(reserve_1("hallo"));
+  </script>  
+</body>
+</html>
