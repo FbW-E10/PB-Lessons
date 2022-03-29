@@ -17,9 +17,6 @@ class CoffeeShop {
         console.log(`${order} is not available`);
     }
 
-  
-   
-  
     fulfillOrder() {
       if (this.orders.length > 0) {
         console.log(`The ${this.orders[0].item} is ready`);
@@ -40,18 +37,7 @@ class CoffeeShop {
       return result;
     }
   
-    cheapestItem() {
-      let result = this.menu.reduce((prev, next) =>
-        prev.price < next.price ? prev : next
-      );
-      return "lowest", result.item;
-    }
-    drinksOnly() {
-      return this.menu.filter((x) => x.type === "drink");
-    }
-    foodOnly() {
-      return this.menu.filter((x) => x.type === "food");
-    }
+   
   }
   const BerlinCoffeshop = new CoffeeShop(
     "franko",
