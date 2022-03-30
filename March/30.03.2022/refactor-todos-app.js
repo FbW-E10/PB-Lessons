@@ -79,11 +79,13 @@ class ToDos {
    //6- Create a method named `deleteMany` to remove more then one item from the list by order number.
    deleteMany(...removeItems) {
      // action.deleteMany(2,6) , removeItems = [2,6]
-     // !Error
-     /* removeItems.reverse().map((currentOrder) => {
+     // !Error => we can’t use splice because splice change the order of the elements in the original array
+     /* const cloneArr = [...this.toDosStore];
+     removeItems.map((currentOrder) => {
        let currentIndex = currentOrder - 1;
-       this.toDosStore.splice(currentIndex, 1);
-     });*/
+       cloneArr.splice(currentIndex, 1);
+     });
+     this.toDosStore = cloneArr;*/
  
      // with filter
      let updateArr = this.toDosStore.filter((item, index) => {
@@ -108,8 +110,31 @@ class ToDos {
      });
    }
  
-   // 8- Create a method named editMany (task)
-   editMany() {}
+   // 8- Create a method named editMany to edit many elements by order number (task).
+   /*editMany(...updateItems) {
+   //actions.editMany([2, "new item 2"], [4, "new item 4"]);
+ 
+     updateItems.map((item) => {
+       this.toDosStore[item[0] - 1] = item[1];
+     });
+   }*/
+ 
+   /*editMany(orders, newValues) {
+   //actions.editMany([2, 4], ["new item 2", "new item 4"]);
+ 
+     orders.map((order, index) => {
+       this.toDosStore[order - 1] = newValues[index];
+     });
+   }*/
+ 
+   /* editMany(itemsObject) {
+     //actions.editMany({ 2: "new item 2", 4: "new item 4" });
+     
+     const objectToArray = Object.entries(itemsObject);
+     objectToArray.forEach((item) => {
+       this.toDosStore[item[0] - 1] = item[1];
+     });
+   }*/
  }
  
  const actions = new Actions([
@@ -118,10 +143,11 @@ class ToDos {
    "Pay bills"
  ]);
  
- console.log(actions.toDosStore);
+ //console.log(actions.toDosStore);
  // Take actions
  // add new item
  actions.addOne("Meet Tommy");
+ 
  actions.addOne("Call your team leader at 10");
  
  // add many new items
@@ -136,6 +162,9 @@ class ToDos {
  actions.editOne(4, "New value in order 4");
  
  actions.deleteMany(2, 6);
+ //actions.editMany([2, "new item 2"], [4, "new item 4"]);
+ //actions.editMany([2, 4], ["new item 2", "new item 4"]);
+ //actions.editMany({ 2: "new item 2", 4: "new item 4" });
  
  // In the end of the file!
  console.log(actions.renderToDosListTemplate());
