@@ -1,26 +1,21 @@
+//##### Transform data ######
+
 //1- Array to Object
-// Create a function named arrayToObject take an array as an argument and return object.
+// Create a function named arrayToObject takes an array as an argument and return object.
 /**
   arrayToObject([['firstName', 'John'], ['lastName', 'Do'], ['age', 31]]) ==> {firstName:'John',lastName:'Do', age:31}
  */
 
-
-  
-
 //-----------------//
 
 //2- Object to Array
-// Create a function named objectToArray take an object as an argument and return array.
+// Create a function named objectToArray takes an object as an argument and return array.
 /**
   objectToArray({name:'Alex', age: 29}) ==> [['name', 'Alex'],  ['age', 29]]
  */
 
-
-
-
-
 //---------------//
-//3- Create a function named addWord take an array of names as first argument and a string (Hello) as second argument.
+//3- Create a function named addWord takes an array of names as first argument and a string (Hello) as second argument.
 /**
  let names = ['John', 'Bob'];
  Look at the expected output:
@@ -29,15 +24,11 @@
 
  */
 
+//--------------------------------------------------------------------------------//
+//######### Nested for loop ###########
+//4-  Create a function named grid takes a number of grids as first argument and a string char as second argument.
 
-
-
-
-//---------------//
-
-  //4-  Create a function named grid take a number grids as first argument and a string char as second argument.
-
-  /**
+/**
     Look at the expected output:
     grid(5, "#") ==> [
                       [ '#', '#', '#', '#', '#' ],
@@ -49,14 +40,10 @@
    
    */
 
-
-
-
-
-
-//---------------//
- //5- Create a function named freelanceInvoice takes an object (hourAndDays) as the first argument and cost per hour as the second argument.
- /*
+//----------------------------------------------------------------------------------//
+//######### Arrays & objects ###########
+//5- Create a function named freelanceInvoice takes an object (hourAndDays) as the first argument and cost per hour as the second argument.
+/*
  Look at the expected output:
  const hourAndDays = [
     { day: 'Monday', start: 8, end: 15},
@@ -68,13 +55,10 @@ freelanceInvoice(hourAndDays , 20) ==> 400 Euro
 
  */
 
-
-
-
-//---------------//
-//6- Classes
+//----------------------------------------------------------------------------------//
+//######### Classes ###########
 /**
- Create class named Shop.
+6- Create class named Shop.
     Add a constructor to initialize the properties in the given order.
 
     Class' properties:
@@ -84,12 +68,13 @@ freelanceInvoice(hourAndDays , 20) ==> 400 Euro
     the space as a number (the space needed `square meter` for each person in the shop)
 
     Class' methods:
-    totalPeopleToGetIn() // How many people should get in the shop
+    totalPeopleToGetIn() // Maximum people should get in the shop
 
     details() // The shop details
 
 
     If name = Netto, area = 200 and space for each person is 5 square meter
+
     Expected Output:
 
     shop.totalPeopleToGetIn();
@@ -100,18 +85,15 @@ freelanceInvoice(hourAndDays , 20) ==> 400 Euro
 
  */
 
+//----------------------------------------------------------------------------------//
+//######## Arrays ################
 
-
-
-//---------------//
 //7- Create a function named capitalize takes a string as the first argument and returns the string by capitalizing the first letters.
 
 // Example: capitalize('hello world') ==> Hello World
 
-
-
-
-//---------------//
+//-------------------------------------------------------------------------------//
+//########## Problem Solving ############
 /**
  8- Create a function named checkPassword takes a password as an argument and check:
 
@@ -130,6 +112,3 @@ freelanceInvoice(hourAndDays , 20) ==> 400 Euro
     checkPassword('123456') // true
     checkPassword('1234xx56') // false
  */
-
-
-
