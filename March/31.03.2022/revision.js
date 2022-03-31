@@ -316,7 +316,8 @@
        }
      });
    });
-   return output;
+// sort the odd numbers 
+return output.sort((a, b) => a - b);
  }
  
  console.log(getOddNumbers_1(numbers)); // [1, 3, 5, 13, 7, 45]
