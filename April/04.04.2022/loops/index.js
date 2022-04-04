@@ -42,16 +42,114 @@ const cars = ["Ford","BMW","KIA","Honda"];
 // while(counter < 10)
 
 // nested for loop
-for(let i =0;i < 10 ;i++){
-   // console.log("#");
-   process.stdout.write("\n")
+// for(let i =0;i < 10 ;i++){
+//    // console.log("#");
+//    process.stdout.write("\n")
    
-    for(let x =0; x < 10; x++){
-        //console.log(x);
-        if( x ==1 || x == 9  ){
-            process.stdout.write(" ")
-        }
-        process.stdout.write(" *")
+//     for(let x =0; x < 10; x++){
+//         //console.log(x);
+//         if( x ==1 || x == 9  ){
+//             process.stdout.write(" ")
+//         }
+//         process.stdout.write(" *")
        
-    }
-}
+//     }
+// }
+
+
+const stars = 10;
+const rows = 10;
+
+
+//######### 1 #################
+// for(let i = 0; i < rows; i++){  // to make rows
+//     for(let a = 0; a < stars; a++){ // to make stars
+//         if(i === 0 || a === 0 || i === stars -1 || a === rows -1 ){
+//             process.stdout.write(" *") // to make a star
+
+//         }
+//         else {
+//             process.stdout.write("  ")
+//         }
+
+        
+//     }
+
+//     process.stdout.write("\n"); // to make new line
+
+// }
+
+
+//####### 2 ########
+// for(let i = 0; i < rows; i++){  // to make rows
+//     for(let a = 0; a < stars; a++){ // to make stars
+//         if(i === rows -1 || a === 0 || a === i  ){
+//             process.stdout.write(" *") // to make a star
+
+//         }
+//         else {
+//             process.stdout.write("  ")
+//         }
+
+        
+//     }
+
+//     process.stdout.write("\n"); // to make new line
+
+// }
+
+
+//####### 3 ########
+// for(let i = 0; i < rows; i++){  // to make rows
+//     for(let a = 0; a < stars; a++){ // to make stars
+//         if(i === 0 || a === 0 || i + a === stars -1){
+//             
+//             process.stdout.write(" *") // to make a star
+
+//         }
+//         else {
+//             process.stdout.write("  ")
+//         }
+
+        
+//     }
+
+//     process.stdout.write("\n"); // to make new line
+
+// }
+
+// ###### 4 ###########
+// for(let i = 0; i < rows; i++){  // to make rows
+//     for(let a = 0; a < stars; a++){ // to make stars
+//         if(i === 0 || a === stars -1 || i === a){
+             
+//             process.stdout.write(" *") // to make a star
+
+//         }
+//         else {
+//             process.stdout.write("  ")
+//         }
+
+        
+//     }
+
+//     process.stdout.write("\n"); // to make new line
+
+// }
+
+// let i = 0;
+// let a = 0;
+// while(i < rows ){
+//     while(a < stars  ){
+//         if( a === 0 || i === 0 || a === stars -1)
+//         process.stdout.write(" *") // to make a star
+//         else {
+//             process.stdout.write("  ") // to make a space
+//         }
+//         a++;
+
+//     }
+   
+//     process.stdout.write("\n"); // to make new line
+//     i++;
+// }
