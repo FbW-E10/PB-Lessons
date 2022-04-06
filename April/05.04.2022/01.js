@@ -136,11 +136,11 @@ const data = {
     }
     
     function getDoneTasks(obj){
-        const result = { count:0 , name:""};
+        const result = { count:0 , name:""}; // the person who completed tasks 
         let count = 0
      for(let key in obj){
         count =  obj[key].filter(item =>{
-           return item.completed
+           return item.completed 
          }).length;
          if(count > result.count){
              result.count = count;
@@ -150,6 +150,7 @@ const data = {
          console.log(count,key);
      }
     console.log(result);
+    console.log(result.name,"completed ",result.count , "tasks")
     }
 
     getDoneTasks(data);
