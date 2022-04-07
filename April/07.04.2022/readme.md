@@ -14,7 +14,9 @@ Once we finish our branch, we commit our changes, push the branch upwards and cr
 GitHub checks then automatically if that branch could be integrated into the "mainline" of our project (=> the "main" branch - earlier called "master" branch)
 
 In case GitHub detects NO conflicts with the existing project code, it will allow us to merge our feature directly into the main branch. And then the feature became part of the project code. 
+
 ![enter image description here](https://docs.github.com/assets/cb-13037/images/help/pull_requests/pullrequest-mergebutton.png)
+
 In case GitHub detects conflicts, it will NOT allow the automatic merging of the branch. For good reasons. It prevents accidental overwriting of others peoples work this way.
 
 The typical scenarios where this happens: Two people have made changes on the same files - at approximately the same lines! Git is smart and can often detect if you made changes at different parts of a file. Then it will smartly merge these file changes together and there will not be a conflict. 
